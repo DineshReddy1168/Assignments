@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forms</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Employee Addition Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="empName">Name:</label>
+        <input type="text" id="empName" name="empName" required>
+      </div>
+      <div class="form-group">
+        <label for="empEmail">Email:</label>
+        <input type="email" id="empEmail" name="empEmail">
+      </div>
+      <div class="form-group">
+        <label for="empPassword">Password:</label>
+        <input type="password" id="empPassword" name="empPassword">
+      </div>
+      <div class="form-group">
+        <label>Gender:</label>
+        <label><input type="radio" name="empGender" value="Male"> Male</label>
+        <label><input type="radio" name="empGender" value="Female"> Female</label>
+      </div>
+      <div class="form-group">
+        <label for="empDept">Department:</label>
+        <select id="empDept" name="empDept">
+          <option>Engineering</option>
+          <option>HR</option>
+          <option>Marketing</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Skills:</label>
+        <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
+        <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+        <label><input type="checkbox" name="skills" value="JavaScript"> JavaScript</label>
+      </div>
+      <div class="form-group">
+        <label for="empDOB">Date of Birth:</label>
+        <input type="date" id="empDOB" name="empDOB">
+      </div>
+      <div class="form-group">
+        <label for="empResume">Upload Resume:</label>
+        <input type="file" id="empResume" name="empResume">
+      </div>
+      <div class="form-group full-width">
+        <label for="empBio">Bio:</label>
+        <textarea id="empBio" name="empBio" rows="4"></textarea>
+      </div>
+      <div class="form-group full-width">
+        <input type="submit" class="submit-btn" value= "Add Employee">
+      </div>
+    </form>
+
+    <br>
+
+    <h2>Student Addition Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="stuName">Name:</label>
+        <input type="text" id="stuName" name="stuName" required>
+      </div>
+      <div class="form-group">
+        <label for="stuEmail">Email:</label>
+        <input type="email" id="stuEmail" name="stuEmail">
+      </div>
+      <div class="form-group">
+        <label for="stuPassword">Password:</label>
+        <input type="password" id="stuPassword" name="stuPassword">
+      </div>
+      <div class="form-group">
+        <label>Gender:</label>
+        <label><input type="radio" name="stuGender" value="Male"> Male</label>
+        <label><input type="radio" name="stuGender" value="Female"> Female</label>
+      </div>
+      <div class="form-group">
+        <label for="stuCourse">Course:</label>
+        <select id="stuCourse" name="stuCourse">
+          <option>B.Tech</option>
+          <option>Diploma</option>
+          <option>MCA</option>
+          <option>M.Tech</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Interests:</label>
+        <label><input type="checkbox" name="interests" value="Coding"> Coding</label>
+        <label><input type="checkbox" name="interests" value="Design"> Design</label>
+        <label><input type="checkbox" name="interests" value="Gaming"> Gaming</label>
+      </div>
+      <div class="form-group">
+        <label for="stuDOB">Date of Birth:</label>
+        <input type="date" id="stuDOB" name="stuDOB">
+      </div>
+      <div class="form-group">
+        <label for="stuPhoto">Upload Photo:</label>
+        <input type="file" id="stuPhoto" name="stuPhoto">
+      </div>
+      <div class="form-group">
+        <label for="stuGrade">Grade (0-100):</label>
+        <input type="range" id="stuGrade" name="stuGrade" min="0" max="100">
+      </div>
+      <div class="form-group full-width">
+        <label for="stuBio">Bio:</label>
+        <textarea id="stuBio" name="stuBio" rows="4"></textarea>
+      </div>
+      <div class="form-group full-width">
+        <input type="submit" class="submit-btn" value="Add Student">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
