@@ -1,0 +1,7 @@
+
+<ul class="company-list" style="cursor:pointer; margin-left:-10px">
+  <li *ngFor="let company of companies" (click)="selectCompany(company.id)">
+     {{ company.name }}
+  </li>
+</ul>
+

@@ -1,0 +1,10 @@
+<h1 class="title" style="padding:30px;background-color:aqua;text-align:center">CompaniesInfo App</h1>
+
+
+  <div class="sidebar" style="margin-left:20px">
+    <app-list (recordSelected)="onRecordSelected($event)"></app-list>
+  </div>
+  <div class="details">
+    <app-detail [recordId]="selectedRecordId"></app-detail>
+  </div>
+

@@ -1,0 +1,10 @@
+<div *ngIf="company" style="background-color:lightblue">
+  <h3>{{ company.name }}</h3>
+  <p><strong>Industry:</strong> {{ company.industry }}</p>
+  <p><strong>Location:</strong> {{ company.location }}</p>
+  <p><strong>Employees:</strong> {{ company.employees }}</p>
+  <p>{{ company.description }}</p>
+</div>
+<div *ngIf="!company">
+  <p style="margin-left:20px"><strong>Select a company to see details.</strong></p>
+</div>
