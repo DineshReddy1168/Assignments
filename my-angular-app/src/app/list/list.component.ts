@@ -5,13 +5,13 @@ import { DataService, Company } from '../data.service';
   selector: 'app-list',
   templateUrl: './list.component.html',
 })
-export class ListComponent {
-  companies: Company[] = [];
+export class ListComponent {  
+  companies: Company[] = [];   
 
-  @Output() recordSelected = new EventEmitter<number>();
+  @Output() recordSelected = new EventEmitter<number>();  
 
   constructor(private dataService: DataService) {
-    this.companies = this.dataService.getRecords();
+    this.companies = this.dataService.getRecords(); 
   }
 
   selectCompany(id: number) {
